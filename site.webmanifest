@@ -1,0 +1,19 @@
+{
+    "name": "Nigeria Commercial Paper Calculator",
+    "short_name": "NaijaCPCalc",
+    "icons": [
+        {
+            "src": "/assets/images/favicon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/images/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#008751",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

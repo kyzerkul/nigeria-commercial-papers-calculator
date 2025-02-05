@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Nigeria Commercial Paper Calculator: Accurate Pricing, Yield & ROI Analysis Tool</title>
+    <meta name="title" content="Nigeria Commercial Paper Calculator: Accurate Pricing, Yield & ROI Analysis Tool">
+    <meta name="description" content="Maximize your returns with our Nigeria Commercial Paper Calculator. Easily compute discounted prices, yield-to-maturity (YTM), and net proceeds for CP investments. Perfect for investors & businesses!">
+    <meta name="keywords" content="Nigeria Commercial Paper, CP Calculator, Yield Calculator, Investment Calculator, Nigerian Money Market, Financial Tools, ROI Calculator, Commercial Paper Pricing">
+    <meta name="author" content="Nigerian Financial Tools">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nigeria Commercial Paper Calculator: Accurate Pricing, Yield & ROI Analysis Tool">
+    <meta property="og:description" content="Maximize your returns with our Nigeria Commercial Paper Calculator. Easily compute discounted prices, yield-to-maturity (YTM), and net proceeds for CP investments. Perfect for investors & businesses!">
+    <meta property="og:site_name" content="Nigeria CP Calculator">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nigeria Commercial Paper Calculator: Accurate Pricing, Yield & ROI Analysis Tool">
+    <meta name="twitter:description" content="Maximize your returns with our Nigeria Commercial Paper Calculator. Easily compute discounted prices, yield-to-maturity (YTM), and net proceeds for CP investments.">
+    
+    <!-- Technical Meta Tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#008751">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Structured Data for Calculator -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Nigeria Commercial Paper Calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "description": "Professional calculator for Nigerian Commercial Paper investments. Calculate discounted prices, yields, and returns for money market instruments.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "NGN"
+        },
+        "featureList": [
+            "Commercial Paper Price Calculation",
+            "Yield-to-Maturity Analysis",
+            "ROI Computation",
+            "Net Proceeds Calculation"
+        ]
+    }
+    </script>
+
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="header-nav">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Papers Calculator Logo" class="site-logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Calculator</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="mailto:nestorahadji01@gmail.com">Contact</a>
+            </div>
+        </nav>
+        <h1>Nigerian Commercial Papers Calculator</h1>
+        <p class="subtitle">Institutional Grade Commercial Paper Calculator: Advanced Financial Tools for Nigerian Markets</p>
+        <div class="calculator-container">
+            <div class="input-group">
+                <label for="faceValue">Face Value (₦)</label>
+                <input type="number" id="faceValue" placeholder="e.g., 1000000">
+            </div>
+            <div class="input-group">
+                <label for="discountRate">Discount Rate (%)</label>
+                <input type="number" id="discountRate" step="0.01" placeholder="e.g., 10">
+            </div>
+            <div class="input-group">
+                <label for="daysToMaturity">Days to Maturity</label>
+                <input type="number" id="daysToMaturity" placeholder="e.g., 90" max="270">
+            </div>
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="reset()" class="reset-button">Reset</button>
+            
+            <div class="results">
+                <div class="result-item">
+                    <h3>Purchase Price</h3>
+                    <p id="price">₦ 0.00</p>
+                </div>
+                <div class="result-item">
+                    <h3>Discount Amount</h3>
+                    <p id="discount">₦ 0.00</p>
+                </div>
+                <div class="result-item">
+                    <h3>Yield</h3>
+                    <p id="yield">0.00%</p>
+                </div>
+            </div>
+            <button onclick="printResults()" class="print-button">
+                <span class="print-icon">🖨️</span> Print Results
+            </button>
+        </div>
+        <div class="info-section">
+            <h2>Understanding Commercial Papers (CPs)</h2>
+            <p>A commercial paper (CP) is an unsecured, short-term debt security issued by corporations to fund immediate operational needs like accounts payable, inventory, or short-term obligations. In Nigeria, CPs are overseen by the Central Bank of Nigeria (CBN) and act as a critical financing mechanism for businesses. They also offer investors attractive returns compared to conventional savings accounts or government-issued treasury bills.</p>
+
+            <h2>What is the Nigeria Commercial Paper Expert Calculator?</h2>
+            <p>The Nigeria Commercial Paper Expert Calculator is a digital solution that enables investors and businesses to assess the financial metrics of commercial papers. It automates the computation of discounted prices, yields, and net earnings, streamlining investment decisions and enhancing transparency in CP transactions.</p>
+
+            <h2>How Does the Calculator Function?</h2>
+            <p>The tool applies fundamental financial formulas to generate metrics such as discounted purchase price, yield to maturity (YTM), and net proceeds. Users input key parameters like principal amount, discount rate, and tenure to receive instant results.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Advantages of the Calculator</h3>
+                    <ul>
+                        <li><strong>Accuracy:</strong> Minimizes human error in manual calculations.</li>
+                        <li><strong>Speed:</strong> Delivers complex computations in seconds.</li>
+                        <li><strong>Strategic Insight:</strong> Clarifies potential returns and risks prior to investment.</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Essential Inputs</h3>
+                    <ul>
+                        <li><strong>Principal Amount:</strong> Face value (e.g., ₦1,000,000).</li>
+                        <li><strong>Discount Rate:</strong> Annualized interest rate (e.g., 10%).</li>
+                        <li><strong>Tenure:</strong> Maturity period (typically 30–270 days).</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Key Outputs</h3>
+                    <ul>
+                        <li><strong>Discounted Value:</strong> Upfront cost to purchase the CP.</li>
+                        <li><strong>Yield to Maturity (YTM):</strong> Annualized return based on the purchase price.</li>
+                        <li><strong>Net Proceeds:</strong> Final cash flow after fees.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Who Uses This Tool?</h2>
+            <ul class="user-list">
+                <li><strong>Investors:</strong> Analyze CP profitability vs. other short-term investments.</li>
+                <li><strong>Businesses:</strong> Estimate funding costs when issuing CPs.</li>
+            </ul>
+
+            <h2>Risks to Consider</h2>
+            <div class="risks-section">
+                <div class="risk-item">
+                    <h3>Credit Risk</h3>
+                    <p>Potential issuer default.</p>
+                </div>
+                <div class="risk-item">
+                    <h3>Liquidity Risk</h3>
+                    <p>Challenges selling CPs before maturity.</p>
+                </div>
+                <div class="risk-item">
+                    <h3>Interest Rate Risk</h3>
+                    <p>Price volatility due to rate fluctuations.</p>
+                </div>
+            </div>
+
+            <h2>Final Insights</h2>
+            <p class="final-insights">The Nigeria Commercial Paper Expert Calculator is an essential resource for optimizing CP investments or corporate financing strategies. By translating complex calculations into actionable data, it empowers users to navigate Nigeria's CP market confidently. Whether you're an investor chasing higher yields or a business managing short-term liquidity, this tool simplifies the process.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="50" viewBox="0 0 250 50">
+    <title>Papers Calculator Logo</title>
+    <style>
+        .logo-text { font-family: Arial, sans-serif; fill: #008751; }
+    </style>
+    <g>
+        <image href="data:image/png;base64,..." x="0" y="0" width="50" height="50"/>
+        <text x="60" y="35" class="logo-text" font-size="24">PAPERS CALCULATOR</text>
+    </g>
+</svg>
